@@ -1,5 +1,6 @@
 import 'package:rcis_ep_task_six/rcis_ep_task_six.dart' as rcis_ep_task_six;
 import 'dart:io';
+import 'dart:math';
 //.........................................Zadanie(1)............................
 // void main() {
 //   List<String> words = File('numsTask1.txt').readAsLinesSync();
@@ -57,4 +58,48 @@ import 'dart:io';
 //     }
 //   }
 //   print('Cумма чисел кратных $a = $sum');
+// }
+//.........................................Zadanie(5)............................
+// void main()  {
+//   stdout.write('введите n: ');
+//   int n = int.parse(stdin.readLineSync()!);
+//   stdout.write('введите m: ');
+//   int m = int.parse(stdin.readLineSync()!);
+//   List<List<int>> nums = List.generate(n, (index) => List.generate(m + 1, ((index) => Random().nextInt(2))));
+//   for(int i = 0; i < n; ++i){
+//     int count = 0;
+//     for(int j = 0; j < m; ++j){
+//       if(nums[i][j] == 1){
+//         count++;
+//       }
+//     }
+//     if(count % 2 != 0){
+//       nums[i][m] = 1;
+//     }else{
+//       nums[i][m] = 0;
+//     }
+//   }
+//   for(int i = 0; i < n; ++i){
+//     for(int j = 0; j < m + 1; ++j){
+//       stdout.write('${nums[i][j]} ');
+//     }
+//     print('');
+//   }
+// }
+// .........................................Zadanie(6)............................
+// void main()  {
+//   List<double> positive = [];
+//   List<double> neggative = [];
+//   List<double> nums = List.generate(Random().nextInt(5) + 1, (index) => (Random().nextDouble() * (20) + -10));
+//   for(int i = 0; i< nums.length; ++i){
+//     if(nums[i] < 0){
+//       neggative.add(nums[i]);
+//     }
+//     else{
+//       positive.add(nums[i]);
+//     }
+//   }
+//   print(nums);
+//   print('Положительные числа - $positive');
+//   print('Отрицательные числа - $neggative');
 // }
